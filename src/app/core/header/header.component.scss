@@ -5,8 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  height: 79px;
+  height: calcRem(79);
   width: 100%;
   padding: calcRem(24);
   border-bottom: $beige 1px solid;
@@ -23,8 +22,8 @@
 }
 
 .logo-container {
-  height: 32px;
-  width: 114px;
+  height: calcRem(32);
+  width: calcRem(114);
 
     svg {
       display: block;
