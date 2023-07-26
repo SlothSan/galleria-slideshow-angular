@@ -1,0 +1,54 @@
+@mixin display {
+  font-weight: bold;
+  font-size: calcRem(200);
+  line-height: calcRem(150);
+}
+
+@mixin heading-1 {
+  font-weight: bold;
+  font-size: calcRem(56);
+  line-height: (64);
+}
+
+@mixin heading-2 {
+  font-weight: bold;
+  font-size: calcRem(24);
+  line-height: calcRem(29);
+}
+
+@mixin heading-3 {
+  font-weight: bold;
+  font-size: calcRem(18);
+  line-height: calcRem(22);
+}
+
+@mixin sub-head-1 {
+  font-size: calcRem(15);
+  line-height: calcRem(19);
+}
+
+@mixin sub-head-2 {
+  font-weight: bold;
+  font-size: calcRem(13);
+  line-height: calcRem(17);
+}
+
+@mixin link-1 {
+  font-weight: bold;
+  font-size: calcRem(12);
+  line-height: calcRem(15);
+  letter-spacing: calcRem(2.5);
+}
+
+@mixin link-2 {
+  font-weight: bold;
+  font-size: calcRem(9);
+  line-height: calcRem(11);
+  letter-spacing: calcRem(2);
+}
+
+@mixin body {
+  font-weight: bold;
+  font-size: calcRem(14);
+  line-height: calcRem(28);
+}
