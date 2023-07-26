@@ -1,0 +1,35 @@
+@import '/src/app/shared/common';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: calcRem(79);
+  width: 100%;
+  padding: calcRem(24);
+  border-bottom: $beige 1px solid;
+}
+
+.header-link {
+  @include link-2;
+  text-decoration: none;
+  color: $darkgrey;
+  text-align: center;
+  &:hover {
+    color: $black;
+  }
+}
+
+.logo-container {
+  height: calcRem(32);
+  width: calcRem(114);
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+}
+
+
