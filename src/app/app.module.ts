@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GalleryComponent } from './core/gallery/gallery.component';
 import { HeaderComponent } from './core/header/header.component';
 import { IconsComponent } from './shared/icons/icons/icons.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IconsComponent } from './shared/icons/icons/icons.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
