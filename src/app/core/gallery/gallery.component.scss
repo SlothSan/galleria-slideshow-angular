@@ -1,4 +1,9 @@
+@import "src/app/shared/sass/common";
+
 .gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: fit-content;
   padding: calcRem(24)

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import GalleryData from '../../../assets/data.json';
 import {GalleryDataModel} from "./gallery-model";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'galleria-gallery',
@@ -14,7 +13,6 @@ export class GalleryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.galleryData)
   }
 
 
