@@ -1,8 +1,16 @@
 <header class="header">
   <div class="logo-container">
-      <svg xmlns="http://www.w3.org/2000/svg">
+    <ng-container *ngIf="(isMobile | async); else desktopLogo">
+      <svg  xmlns="http://www.w3.org/2000/svg">
         <use xlink:href="#logo-mobile"></use>
       </svg>
+    </ng-container>
+    <ng-template #desktopLogo>
+      <svg  xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#logo-desktop"></use>
+      </svg>
+    </ng-template>
+
   </div>
   <a class="header-link" routerLink="">START SLIDESHOW</a>
 </header>
