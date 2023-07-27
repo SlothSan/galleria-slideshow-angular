@@ -7,7 +7,7 @@ import {BehaviorSubject} from "rxjs";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isMobile: BehaviorSubject<boolean | null> = new BehaviorSubject<boolean | null>(null);
+  isMobile: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   @HostListener('window:resize', ['$event'])
   onResizeMobile(event: any): void {
     this.isMobile.next(window.innerWidth <= 992)
