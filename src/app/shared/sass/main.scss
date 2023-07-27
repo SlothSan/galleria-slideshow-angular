@@ -1,0 +1,18 @@
+@import 'common';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: $breakpoint__lg) {
+  body {
+    padding: calcRem(40);
+  }
+}

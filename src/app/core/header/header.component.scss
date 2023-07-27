@@ -1,4 +1,4 @@
-@import '/src/app/shared/common';
+@import '/src/app/shared/sass/common';
 
 .header {
   display: flex;
@@ -32,4 +32,24 @@
     }
 }
 
+@media (min-width: $breakpoint__md) {
+  .header {
+    height: calcRem(88);
+    padding: calcRem(29)
+  }
+  .header-link {
+    @include link-1;
+  }
+}
+
+@media (min-width: $breakpoint__lg) {
+  .header {
+    padding: 0;
+    height: calcRem(128);
+  }
+  .logo-container {
+    height: calcRem(48);
+    width: calcRem(170);
+  }
+}
 
