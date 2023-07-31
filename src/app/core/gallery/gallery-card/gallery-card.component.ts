@@ -6,6 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./gallery-card.component.scss']
 })
 export class GalleryCardComponent {
+  @Input() artistName: string = '';
   @Input() thumbnailPainting: string = '';
   @Input() paintingTitle: string = '';
   @Input() paintingArtist: string = '';
