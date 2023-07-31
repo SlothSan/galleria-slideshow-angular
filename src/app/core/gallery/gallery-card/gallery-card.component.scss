@@ -3,6 +3,7 @@
 .card {
   position: relative;
   min-width: calcRem(327);
+  max-width: fit-content;
   margin-bottom: calcRem(24);
   cursor: pointer;
   transition: all 0.2s ease-in-out;

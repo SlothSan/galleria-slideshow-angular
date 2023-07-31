@@ -8,3 +8,16 @@
   height: fit-content;
   padding: calcRem(24)
 }
+
+@media (min-width: $breakpoint__md) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: calcRem(40);
+    grid-auto-flow: dense;
+  }
+
+  galleria-gallery-card:nth-child(8n+5) {
+    grid-column: 4;
+  }
+}
