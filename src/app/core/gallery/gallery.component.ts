@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {GalleryDataModel} from "./gallery-model";
+import {ArtService} from "../../shared/services/art.service";
 
 @Component({
   selector: 'galleria-gallery',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-
+  galleryData: GalleryDataModel[] = [];
+  constructor(private _artService: ArtService) {
+    this.galleryData = this._artService.getAllArt();
+  }
 }

@@ -1,0 +1,10 @@
+<section class="gallery-container">
+  <ng-container *ngFor="let painting of galleryData">
+    <galleria-gallery-card
+      [artistName]="painting.name"
+      [thumbnailPainting]="painting.images.thumbnail"
+      [paintingArtist]="painting.artist.name"
+      [paintingTitle]="painting.name"
+    ></galleria-gallery-card>
+  </ng-container>
+</section>

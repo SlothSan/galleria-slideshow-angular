@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { GalleryComponent } from './core/gallery/gallery.component';
 import { HeaderComponent } from './core/header/header.component';
 import { IconsComponent } from './shared/icons/icons/icons.component';
+import {NgOptimizedImage} from "@angular/common";
+import { GalleryCardComponent } from './core/gallery/gallery-card/gallery-card.component';
+import { ArtComponent } from './core/art/art.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GalleryComponent,
     HeaderComponent,
-    IconsComponent
+    IconsComponent,
+    GalleryCardComponent,
+    ArtComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
