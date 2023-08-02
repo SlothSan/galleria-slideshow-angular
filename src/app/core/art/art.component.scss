@@ -1,0 +1,30 @@
+@import "src/app/shared/sass/common";
+
+.art-section {
+  padding: calcRem(24);
+
+
+  .art-painting {
+    width: calcRem(327);
+    height: calcRem(280);
+    img {
+      ;
+    }
+  }
+  .art-painting-label {
+    position: absolute;
+    z-index: 2;
+    padding: calcRem(24);
+    background: $white;
+    min-width: calcRem(280);
+    min-height: calcRem(104);
+    .art-painting-name {
+      @include heading-2;
+      color: $black;
+    }
+    .art-painting-artist {
+      @include sub-head-1;
+      color: $darkgrey;
+    }
+  }
+}
